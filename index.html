@@ -1,22 +1,218 @@
 <!doctype html>
 <html lang="zh-Hant">
+<head>
 <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>出發前｜比賽打包清單</title>
+<title>出發前｜打包清單</title>
 <style>
-:root{font-family:system-ui,'Microsoft JhengHei',sans-serif;color:#493b63;background:#f7f0ff;accent-color:#a77be8}*{box-sizing:border-box}body{margin:0}header,main{max-width:1100px;margin:auto;padding:28px}header{display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid #e5d9f2}.brand{font-weight:800;font-size:21px;color:#69518b}.language{display:flex;align-items:center;gap:6px}.language button{padding:8px 11px;background:#f0e8fa;color:#684f87;font-size:13px}.language button.active{background:#9270c7;color:#fff}.tag{font-size:13px;color:#8b79a5}h1{font-size:clamp(32px,5vw,54px);letter-spacing:-2px;line-height:1.2;margin:14px 0}p{line-height:1.7;color:#526b60}.hero{padding:26px 0 32px}.eyebrow{color:#9870c8;font-size:13px;letter-spacing:2px;font-weight:700}.layout{display:grid;grid-template-columns:310px 1fr;gap:26px;align-items:start}.panel{background:#fffaff;border:1px solid #eadcf5;border-radius:20px;padding:24px;box-shadow:0 10px 30px #8063a512}h2{font-size:20px;margin:0 0 20px}label.field{display:block;font-size:14px;font-weight:600;margin:18px 0 7px}input,select,button{font:inherit}input[type=text],input[type=number],select{width:100%;border:1px solid #d9c9e9;border-radius:10px;padding:11px;background:#fff;color:#493b63}button{cursor:pointer;border:0;border-radius:10px;padding:12px 16px;background:#9270c7;color:white;font-weight:650}button:hover{filter:brightness(.94)}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #d98b37;outline-offset:3px}.generate{width:100%;margin-top:24px}.note{font-size:12px}.summary{background:linear-gradient(135deg,#8970bd,#b685ca 58%,#d49bb9);color:white;border-radius:16px;padding:22px;margin-bottom:18px}.summary p{color:#cde1d0;font-size:14px;margin:7px 0 14px}.summary strong{font-size:25px}.bar{height:7px;background:#ffffff30;border-radius:8px;overflow:hidden}.bar span{display:block;background:#f8e7a7;height:100%;transition:width .2s}.tools{display:flex;gap:12px;justify-content:space-between;align-items:center;margin:20px 0;font-size:14px;flex-wrap:wrap}.light{background:#f0e8fa;color:#684f87;font-size:13px}.group{margin-bottom:18px}.group h3{font-size:15px;margin:0;padding:12px 4px;border-bottom:1px solid #eee5f3;color:#745b91}.item{display:flex;gap:12px;align-items:center;padding:13px 4px;border-bottom:1px solid #f1ebf5;cursor:pointer}.item input{width:20px;height:20px;flex-shrink:0}.item.done span{text-decoration:line-through;color:#89968b}.item.skipped{opacity:.42}.skip-item{margin-left:auto;width:30px;height:30px;padding:0;border-radius:8px;background:#c74343;color:#fff;font-size:20px;line-height:1}.skip-item:hover{background:#a92f35}.skip-item.restore{background:#efe8f7;color:#725d87}.critical{background:#f8efff;padding:10px 15px;border-radius:12px}.add{display:flex;gap:8px;margin-top:20px}.add input{min-width:0}.empty{padding:22px;color:#58745d}.footer{font-size:12px;margin:24px 0;color:#8b7b9a}#status{font-size:13px;min-height:22px;color:#765c94}.pill{font-size:11px;background:#e9dcb6;border-radius:20px;padding:3px 8px;margin-left:auto;white-space:nowrap}@media(max-width:750px){header,main{padding:20px}.layout{grid-template-columns:1fr}.tag{display:none}.hero{padding:18px 0 24px}}@media print{header,.hero,aside,.tools,.add,.footer,#status{display:none}.layout{display:block}.panel{border:0}.summary{color:black;background:white}.summary p{color:black}.item{break-inside:avoid}}
+:root{font-family:system-ui,'Microsoft JhengHei',sans-serif;color:#493b63;background:#f7f0ff;accent-color:#a77be8}*{box-sizing:border-box}body{margin:0}header,main{max-width:1100px;margin:auto;padding:28px}header{display:flex;justify-content:space-between;align-items:center;gap:12px;border-bottom:1px solid #e5d9f2}.brand{font-weight:800;font-size:21px;color:#69518b}.language{display:flex;align-items:center;gap:6px}.language button{padding:8px 11px;background:#f0e8fa;color:#684f87;font-size:13px}.language button.active{background:#9270c7;color:#fff}.tag{font-size:13px;color:#8b79a5}h1{font-size:clamp(32px,5vw,54px);letter-spacing:-2px;line-height:1.2;margin:14px 0}p{line-height:1.7;color:#6f5d8a}.hero{padding:26px 0 32px}.eyebrow{color:#9870c8;font-size:13px;letter-spacing:2px;font-weight:700}.layout{display:grid;grid-template-columns:310px 1fr;gap:26px;align-items:start}.panel{background:#fffaff;border:1px solid #eadcf5;border-radius:20px;padding:24px;box-shadow:0 10px 30px #8063a512}h2{font-size:20px;margin:0 0 20px}label.field{display:block;font-size:14px;font-weight:600;margin:18px 0 7px}input,select,button{font:inherit}input[type=text],input[type=number],select{width:100%;border:1px solid #d9c9e9;border-radius:10px;padding:11px;background:#fff;color:#493b63}button{cursor:pointer;border:0;border-radius:10px;padding:12px 16px;background:#9270c7;color:white;font-weight:650}button:hover{filter:brightness(.94)}button:focus-visible,input:focus-visible,select:focus-visible,a:focus-visible{outline:3px solid #d98b37;outline-offset:3px}.generate{width:100%;margin-top:24px}.note{font-size:12px}.row{display:flex;gap:8px;margin-top:8px}.row button{white-space:nowrap}.summary{background:linear-gradient(135deg,#8970bd,#b685ca 58%,#d49bb9);color:white;border-radius:16px;padding:22px;margin-bottom:18px}.summary p{color:#f3eafb;font-size:14px;margin:7px 0 14px}.summary strong{font-size:25px}#tripTitle{font-size:20px;font-weight:700}.bar{height:7px;background:#ffffff30;border-radius:8px;overflow:hidden}.bar span{display:block;background:#f8e7a7;height:100%;width:0;transition:width .2s}.tools{display:flex;gap:12px;justify-content:space-between;align-items:center;margin:20px 0;font-size:14px;flex-wrap:wrap}.light{background:#f0e8fa;color:#684f87;font-size:13px}.group{margin-bottom:18px}.group h3{font-size:15px;margin:0;padding:12px 4px;border-bottom:1px solid #eee5f3;color:#745b91}.item{display:flex;gap:12px;align-items:center;padding:13px 4px;border-bottom:1px solid #f1ebf5;cursor:pointer}.item input{width:20px;height:20px;flex-shrink:0}.item.done span{text-decoration:line-through;color:#9a8fa8}.item.skipped{opacity:.42}.skip-item{margin-left:auto;width:30px;height:30px;padding:0;border-radius:8px;background:#c74343;color:#fff;font-size:20px;line-height:1}.skip-item:hover{background:#a92f35}.skip-item.restore{background:#efe8f7;color:#725d87}.critical{background:#f8efff;padding:10px 15px;border-radius:12px}.add{display:flex;gap:8px;margin-top:20px}.add input{min-width:0}.empty{padding:22px}.footer{font-size:12px;margin:24px 0;color:#8b7b9a}#status{font-size:13px;min-height:22px;color:#765c94}@media(max-width:750px){header,main{padding:20px}.layout{grid-template-columns:1fr}.tag{display:none}.hero{padding:18px 0 24px}}@media print{header,.hero,aside,.tools,.add,.footer,#status{display:none}.layout{display:block}.panel{border:0}.summary{color:black;background:white}.summary p{color:black}.item{break-inside:avoid}.skip-item{display:none}}
 </style>
-<header><div class="brand">出發前 <span style="color:#64816b;font-weight:400">/ Pack & Go</span></div><div class="language"><button id="langZh" type="button">繁體中文</button><button id="langEn" type="button">English</button></div><span class="tag" data-i18n="tag">少一點擔心，多一點準備。</span></header>
-<main><div class="hero"><div class="eyebrow">YOUR TRIP, ALL SET.</div><h1>行李再多，也能安心出發。</h1><p>把重要的東西記下來，剩下的，一項一項準備就好。</p></div>
-<div class="layout"><aside class="panel"><h2 data-i18n="formTitle">這次去哪裡？</h2><form id="tripForm"><label class="field" for="destination" data-i18n="destination">目的地</label><select id="destination" required><option value="" selected disabled data-i18n="chooseDestination">請選擇目的地</option><option>基隆市</option><option>臺北市</option><option>新北市</option><option>桃園市</option><option>新竹市</option><option>新竹縣</option><option>苗栗縣</option><option>臺中市</option><option>彰化縣</option><option>南投縣</option><option>雲林縣</option><option>嘉義市</option><option>嘉義縣</option><option>臺南市</option><option>高雄市</option><option>屏東縣</option><option>宜蘭縣</option><option>花蓮縣</option><option>臺東縣</option><option>澎湖縣</option><option>金門縣</option><option>連江縣</option></select><div style="display:flex;gap:8px;margin-top:8px"><input id="newDestination" type="text" maxlength="40" placeholder="新增目的地" aria-label="新增目的地" data-i18n-placeholder="addDestination" data-i18n-aria="addDestination"><button id="addDestination" type="button" data-i18n="add" style="white-space:nowrap">新增</button></div><label class="field" for="days" data-i18n="days">旅行天數</label><input id="days" type="number" min="1" max="30" value="3" required><label class="field" for="purpose" data-i18n="purpose">出遊目的</label><select id="purpose"><option value="city" selected data-i18n="city">城市旅遊</option><option value="business" data-i18n="business">商務出差</option><option value="hiking" data-i18n="hiking">戶外健行</option></select><div class="purpose-add" style="display:flex;gap:8px;margin-top:8px"><input id="newPurpose" type="text" maxlength="40" placeholder="新增出遊目的" aria-label="新增出遊目的" data-i18n-placeholder="addPurpose" data-i18n-aria="addPurpose"><button id="addPurpose" type="button" data-i18n="add" style="white-space:nowrap">新增</button></div><label class="field" for="weather" data-i18n="weather">預期天氣</label><select id="weather"><option value="cool" data-i18n="cool">偏涼</option><option value="hot" data-i18n="hot">炎熱</option><option value="cold" data-i18n="cold">寒冷</option><option value="rain" data-i18n="rain">下雨</option></select><button class="generate" type="submit" data-i18n="generate">產生我的清單 ↗</button><p class="note" data-i18n="note">天氣由你選擇。更新行程會建立新清單，並重設勾選與自訂物品。</p></form></aside>
-<section class="panel" aria-label="打包清單" data-i18n-aria="checklist"><div class="summary"><div id="tripTitle"></div><p id="tripDetail"></p><strong id="progress" aria-live="polite"></strong><div class="bar" role="progressbar" aria-label="打包完成度" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span id="fill"></span></div></div><div class="tools"><label><input id="remaining" type="checkbox"> <span data-i18n="remaining">只看還沒打包的物品</span></label><div><button class="light" id="copy" type="button" data-i18n="copy">複製清單</button> <button class="light" id="print" type="button" data-i18n="print">列印</button></div></div><div id="list"></div><form class="add" id="addForm"><input id="custom" type="text" placeholder="還要帶什麼？例如：作品展示板" aria-label="新增物品名稱" data-i18n-placeholder="addItemHint" data-i18n-aria="addItem" maxlength="80" required><button type="submit" data-i18n="add">新增</button></form><p id="status" role="status"></p></section></div><p class="footer" data-i18n="footer">你的清單儲存在此瀏覽器。競賽用品請依主辦單位規定確認。此工具依選項整理建議，沒有即時天氣或 AI 連線。</p></main>
+</head>
+<body>
+<header><div class="brand">出發前 <span style="color:#64816b;font-weight:400">/ Pack &amp; Go</span></div><div class="language"><button id="langZh" type="button">繁體中文</button><button id="langEn" type="button">English</button></div><span class="tag" data-i18n="tag"></span></header>
+<main>
+<div class="hero"><div class="eyebrow" data-i18n="eyebrow"></div><h1 data-i18n="heroTitle"></h1><p data-i18n="heroText"></p></div>
+<div class="layout">
+<aside class="panel"><h2 data-i18n="formTitle"></h2>
+<form id="tripForm">
+<label class="field" for="destination" data-i18n="destination"></label>
+<select id="destination" required><option value="" selected disabled data-i18n="chooseDestination"></option></select>
+<div class="row"><input id="newDestination" type="text" maxlength="40" data-i18n-placeholder="addDestination" data-i18n-aria="addDestination"><button id="addDestination" type="button" data-i18n="add"></button></div>
+<label class="field" for="days" data-i18n="days"></label>
+<input id="days" type="number" min="1" max="30" value="3" required>
+<label class="field" for="purpose" data-i18n="purpose"></label>
+<select id="purpose"><option value="city" data-i18n="city"></option><option value="business" data-i18n="business"></option><option value="hiking" data-i18n="hiking"></option></select>
+<div class="row"><input id="newPurpose" type="text" maxlength="40" data-i18n-placeholder="addPurpose" data-i18n-aria="addPurpose"><button id="addPurpose" type="button" data-i18n="add"></button></div>
+<label class="field" for="weather" data-i18n="weather"></label>
+<select id="weather"><option value="cool" data-i18n="cool"></option><option value="hot" data-i18n="hot"></option><option value="cold" data-i18n="cold"></option><option value="rain" data-i18n="rain"></option></select>
+<button class="generate" type="submit" data-i18n="generate"></button>
+<p class="note" data-i18n="note"></p>
+</form></aside>
+<section class="panel" data-i18n-aria="checklist">
+<div class="summary"><div id="tripTitle"></div><p id="tripDetail"></p><strong id="progress" aria-live="polite"></strong><div class="bar" id="bar" role="progressbar" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0" data-i18n-aria="progressLabel"><span id="fill"></span></div></div>
+<div class="tools"><label><input id="remaining" type="checkbox"> <span data-i18n="remaining"></span></label><div><button class="light" id="copy" type="button" data-i18n="copy"></button> <button class="light" id="print" type="button" data-i18n="print"></button></div></div>
+<div id="list"></div>
+<form class="add" id="addForm"><input id="custom" type="text" maxlength="80" required data-i18n-placeholder="addItemHint" data-i18n-aria="addItem"><button type="submit" data-i18n="add"></button></form>
+<p id="status" role="status"></p>
+</section>
+</div>
+<p class="footer" data-i18n="footer"></p>
+</main>
 <script>
-const $=id=>document.getElementById(id),key='pack-go-v1',langKey='pack-go-language-v1';let state,language=localStorage.getItem(langKey)==='en'?'en':'zh';
-function create(trip){let items=[];const add=(group,names)=>names.forEach(entry=>{const [name,itemKey]=Array.isArray(entry)?entry:[entry,null];items.push({id:String(items.length),group,name,done:false,skipped:false,itemKey});});add(tr('fixed'),[['充電線（確認接頭相容）','cable'],['身分證件','id'],['鑰匙','keys']]);add(tr('essentials'),[['報到或住宿資料','booking'],['車票與交通資訊','tickets'],['錢包與付款工具','wallet']]);if(trip.purpose==='business')add(tr('work'),[['筆電及充電器','laptop'],['會議資料與簡報備份','meeting']]);if(trip.purpose==='hiking')add(tr('outdoors'),[['登山鞋與適合路線的裝備','shoes'],['飲用水與行動糧','water'],['離線地圖','map']]);add(tr('clothes'),[[`換洗上衣 ${Math.max(0,trip.days-1)} 件（另含身上穿的）`,'shirts'],[`內衣褲 ${trip.days} 套`,'underwear'],['睡衣（住宿時）','sleepwear'],['牙刷、牙膏與個人盥洗用品','toiletries'],['個人日常用藥（如需）','medicine']]);const weather={cool:[['薄外套','jacket'],['長褲','pants']],hot:[['透氣衣物','lightClothes'],['帽子與防曬用品','sun']],cold:[['保暖外套','warmCoat'],['保暖內層與圍巾','layers']],rain:[['雨傘或雨衣','umbrella'],['行李防水袋','bag']]};add(tr('weatherGroup'),weather[trip.weather]);add(tr('extras'),[['手機','phone'],['行動電源','power'],['水壺','bottle'],['面紙','tissues']]);return{trip,items};}
-function formTrip(){return{destination:$('destination').value.trim()||'目的地',days:Number($('days').value),purpose:$('purpose').value,weather:$('weather').value};}
-const baseDestinations='基隆市 臺北市 新北市 桃園市 新竹市 新竹縣 苗栗縣 臺中市 彰化縣 南投縣 雲林縣 嘉義市 嘉義縣 臺南市 高雄市 屏東縣 宜蘭縣 花蓮縣 臺東縣 澎湖縣 金門縣 連江縣'.split(' '),englishDestinations=['Keelung City','Taipei City','New Taipei City','Taoyuan City','Hsinchu City','Hsinchu County','Miaoli County','Taichung City','Changhua County','Nantou County','Yunlin County','Chiayi City','Chiayi County','Tainan City','Kaohsiung City','Pingtung County','Yilan County','Hualien County','Taitung County','Penghu County','Kinmen County','Lienchiang County'],destinationKey='pack-go-destinations-v1';let customDestinations=[];try{const ds=JSON.parse(localStorage.getItem(destinationKey));if(Array.isArray(ds))customDestinations=ds.filter(x=>typeof x==='string').slice(0,30);}catch{}customDestinations.filter(x=>!baseDestinations.includes(x)).forEach(x=>{const o=document.createElement('option');o.textContent=x;o.value=x;document.getElementById('destination').append(o);});const basePurposes={city:'城市旅遊',business:'商務出差',hiking:'戶外健行'},purposeKey='pack-go-purposes-v1';let customPurposes=[];try{const ps=JSON.parse(localStorage.getItem(purposeKey));if(Array.isArray(ps))customPurposes=ps.filter(p=>p&&typeof p.id==='string'&&typeof p.name==='string').slice(0,30);}catch{}function translateBaseItem(name){const lookup={'充電線（確認接頭相容）':'Charging cable (check connector)','身分證件':'ID','鑰匙':'Keys','報到或住宿資料':'Check-in or lodging details','車票與交通資訊':'Tickets and transport details','錢包與付款工具':'Wallet and payment method','筆電及充電器':'Laptop and charger','會議資料與簡報備份':'Meeting notes and presentation backup','登山鞋與適合路線的裝備':'Hiking shoes and suitable gear','飲用水與行動糧':'Drinking water and trail snacks','離線地圖':'Offline map','睡衣（住宿時）':'Sleepwear (if staying overnight)','牙刷、牙膏與個人盥洗用品':'Toothbrush, toothpaste, and toiletries','個人日常用藥（如需）':'Personal medication (if needed)','薄外套':'Light jacket','長褲':'Long pants','透氣衣物':'Lightweight clothing','帽子與防曬用品':'Hat and sunscreen','保暖外套':'Warm coat','保暖內層與圍巾':'Warm layers and scarf','雨傘或雨衣':'Umbrella or raincoat','行李防水袋':'Waterproof bag cover','手機':'Phone','行動電源':'Power bank','水壺':'Water bottle','面紙':'Tissues'};if(language==='en'&&lookup[name])return lookup[name];const m=name.match(/^換洗上衣 (\d+) 件（另含身上穿的）$/);if(m)return language==='en'?`Clean shirts ${m[1]} (plus the outfit worn)`:name;const u=name.match(/^內衣褲 (\d+) 套$/);if(u)return language==='en'?`Sets of underwear ${u[1]}`:name;return name;}function purposeName(id){return basePurposes[id]||customPurposes.find(p=>p.id===id)?.name||'自訂行程';}customPurposes.forEach(p=>{const o=document.createElement('option');o.value=p.id;o.textContent=p.name;$('purpose').append(o);});try{const saved=JSON.parse(localStorage.getItem(key));if(saved&&saved.trip&&Array.isArray(saved.items)&&saved.items.every(x=>typeof x.name==='string'&&typeof x.group==='string')&&['cool','hot','cold','rain'].includes(saved.trip.weather)&&(Object.hasOwn(basePurposes,saved.trip.purpose)||customPurposes.some(p=>p.id===saved.trip.purpose))&&Number.isInteger(saved.trip.days)&&saved.trip.days>=1&&saved.trip.days<=30)state=saved;}catch{}if(!state){$('purpose').value='city';$('destination').value='';state=create({...formTrip(),destination:'請選擇目的地'});}for(const id of ['destination','days','purpose','weather'])$(id).value=state.trip[id];
-function save(){try{localStorage.setItem(key,JSON.stringify(state));}catch{$('status').textContent=tr('storageFail');}}
-function render(){const active=state.items.filter(x=>!x.skipped),done=active.filter(x=>x.done).length,total=active.length,percent=total?Math.round(done/total*100):100;$('tripTitle').textContent=tr('trip',{destination:state.trip.destination,days:state.trip.days,nights:state.trip.days-1});$('tripDetail').textContent=`${purposeName(state.trip.purpose)} ／ ${tr('weatherSummary')[state.trip.weather]}`;$('progress').textContent=total===0?tr('skipped'):done===total?tr('ready'):tr('done',{done,total});$('fill').style.width=percent+'%';document.querySelector('[role=progressbar]').setAttribute('aria-valuenow',percent);$('list').replaceChildren();const visible=state.items.filter(x=>!$('remaining').checked||(!x.done&&!x.skipped));for(const group of [...new Set(visible.map(x=>x.group))]){const section=document.createElement('section');section.className='group'+(group.startsWith('出門前')?' critical':'');const heading=document.createElement('h3');heading.textContent=groupKeys[group]?tr(groupKeys[group]):group;section.append(heading);for(const item of visible.filter(x=>x.group===group)){const label=document.createElement('label');label.className='item'+(item.done?' done':'')+(item.skipped?' skipped':'');const check=document.createElement('input');check.type='checkbox';check.checked=item.done;check.addEventListener('change',()=>{item.done=check.checked;save();render();});const span=document.createElement('span');span.textContent=item.itemKey?tr(item.itemKey):item.name;label.append(check,span);if(['衣物與盥洗','天氣準備','隨身小物'].includes(group)){const skip=document.createElement('button');skip.type='button';skip.className='skip-item'+(item.skipped?' restore':'');skip.textContent=item.skipped?'＋':'−';skip.setAttribute('aria-label',item.skipped?tr('restore')+' '+span.textContent:tr('noNeed')+' '+span.textContent);skip.title=item.skipped?tr('restore'):tr('noNeed');skip.addEventListener('click',()=>{item.skipped=!item.skipped;if(item.skipped)item.done=false;save();render();});label.append(skip);}section.append(label);}$('list').append(section);}if(!visible.length){const msg=document.createElement('p');msg.className='empty';msg.textContent=tr('none');$('list').append(msg);}}
-$('addDestination').addEventListener('click',()=>{const name=$('newDestination').value.trim();if(!name)return;if([...baseDestinations,...customDestinations].some(x=>x.toLocaleLowerCase()===name.toLocaleLowerCase())){$('status').textContent=tr('duplicateDestination');return;}if(customDestinations.length>=30){$('status').textContent=tr('destinationLimit');return;}customDestinations.push(name);try{localStorage.setItem(destinationKey,JSON.stringify(customDestinations));}catch{}const o=document.createElement('option');o.value=name;o.textContent=name;$('destination').append(o);$('destination').value=name;$('newDestination').value='';$('status').textContent=tr('destinationAdded',{name});});$('newDestination').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();$('addDestination').click();}});$('addPurpose').addEventListener('click',()=>{const name=$('newPurpose').value.trim();if(!name)return;if([...Object.values(basePurposes),...customPurposes.map(p=>p.name)].some(x=>x.toLocaleLowerCase()===name.toLocaleLowerCase())){$('status').textContent=tr('duplicatePurpose');return;}if(customPurposes.length>=30){$('status').textContent=tr('purposeLimit');return;}const purpose={id:'custom-'+Date.now(),name};customPurposes.push(purpose);const o=document.createElement('option');o.value=purpose.id;o.textContent=name;$('purpose').append(o);try{localStorage.setItem(purposeKey,JSON.stringify(customPurposes));}catch{}$('purpose').value=purpose.id;$('newPurpose').value='';$('status').textContent=tr('purposeAdded',{name});});$('newPurpose').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();$('addPurpose').click();}});$('tripForm').addEventListener('submit',event=>{event.preventDefault();if(state.items.some(x=>x.done||x.group==='自訂物品')&&!confirm(tr('reset')))return;state=create(formTrip());save();render();$('status').textContent=tr('generated');});$('remaining').addEventListener('change',render);$('addForm').addEventListener('submit',event=>{event.preventDefault();const name=$('custom').value.trim();if(!name)return;state.items.push({id:'custom-'+Date.now(),group:'自訂物品',name,done:false});$('custom').value='';save();render();$('status').textContent=tr('itemAdded',{name});});$('print').addEventListener('click',()=>window.print());$('copy').addEventListener('click',async()=>{const text=[`${state.trip.destination} ${state.trip.days} 天打包清單`,...state.items.map(x=>`${x.done?'☑':'☐'} ${x.name}`)].join('\n');try{await navigator.clipboard.writeText(text);$('status').textContent=tr('copyOk');}catch{$('status').textContent=tr('copyFail');}});$('langZh').addEventListener('click',()=>{language='zh';localStorage.setItem(langKey,language);applyLanguage();});$('langEn').addEventListener('click',()=>{language='en';localStorage.setItem(langKey,language);applyLanguage();});applyLanguage();
-</script>
-</html>
+const $=id=>document.getElementById(id);
+const key='pack-go-v2',langKey='pack-go-language-v1',destinationKey='pack-go-destinations-v1',purposeKey='pack-go-purposes-v1';
+const safeGet=k=>{try{return localStorage.getItem(k)}catch{return null}};
+const safeSet=(k,v)=>{try{localStorage.setItem(k,v);return true}catch{return false}};
+let language=safeGet(langKey)==='en'?'en':'zh',state;
 
+const D={
+zh:{
+pageTitle:'出發前｜打包清單',tag:'少一點擔心，多一點準備。',eyebrow:'YOUR TRIP, ALL SET.',heroTitle:'行李再多，也能安心出發。',heroText:'把重要的東西記下來，剩下的，一項一項準備就好。',
+formTitle:'這次去哪裡？',destination:'目的地',chooseDestination:'請選擇目的地',addDestination:'新增目的地',add:'新增',days:'旅行天數',purpose:'出遊目的',addPurpose:'新增出遊目的',
+city:'城市旅遊',business:'商務出差',hiking:'戶外健行',weather:'預期天氣',cool:'偏涼',hot:'炎熱',cold:'寒冷',rain:'下雨',generate:'產生我的清單 ↗',
+note:'天氣由你選擇。更新行程會建立新清單，並重設勾選與自訂物品。',checklist:'打包清單',progressLabel:'打包完成度',remaining:'只看還沒打包的物品',copy:'複製清單',print:'列印',
+addItemHint:'還要帶什麼？例如：作品展示板',addItem:'新增物品名稱',
+footer:'你的清單儲存在此瀏覽器。競賽用品請依主辦單位規定確認。此工具依選項整理建議，沒有即時天氣或 AI 連線。',
+g_fixed:'出門前最後確認',g_essentials:'行程必備',g_work:'工作用品',g_outdoors:'戶外裝備',g_clothes:'衣物與盥洗',g_weatherGroup:'天氣準備',g_extras:'隨身小物',g_custom:'自訂物品',
+cable:'充電線（確認接頭相容）',id:'身分證件',keys:'鑰匙',booking:'報到或住宿資料',tickets:'車票與交通資訊',wallet:'錢包與付款工具',laptop:'筆電及充電器',meeting:'會議資料與簡報備份',
+shoes:'登山鞋與適合路線的裝備',water:'飲用水與行動糧',map:'離線地圖',shirts:p=>`換洗上衣 ${p.n} 件（另含身上穿的）`,underwear:p=>`內衣褲 ${p.n} 套`,sleepwear:'睡衣（住宿時）',
+toiletries:'牙刷、牙膏與個人盥洗用品',medicine:'個人日常用藥（如需）',jacket:'薄外套',pants:'長褲',lightClothes:'透氣衣物',sun:'帽子與防曬用品',warmCoat:'保暖外套',layers:'保暖內層與圍巾',
+umbrella:'雨傘或雨衣',bag:'行李防水袋',phone:'手機',power:'行動電源',bottle:'水壺',tissues:'面紙',
+w_cool:'偏涼',w_hot:'炎熱',w_cold:'寒冷',w_rain:'下雨',customTrip:'自訂行程',noDest:'請選擇目的地',
+trip:p=>p.days===1?`${p.destination}・當日來回`:`${p.destination}・${p.days} 天 ${p.nights} 夜`,
+skipped:'目前沒有需要準備的項目',ready:'全部準備好了，出發吧！',done:p=>`已準備 ${p.done} / ${p.total}`,restore:'恢復項目',noNeed:'不需要',none:'沒有符合的項目。',
+reset:'產生新清單會重設目前的勾選與自訂物品，要繼續嗎？',generated:'已產生新的清單。',itemAdded:p=>`已新增：${p.name}`,copyOk:'已複製清單。',copyFail:'無法複製，請手動選取清單內容。',
+storageFail:'無法儲存到此瀏覽器，重新整理後清單可能消失。',duplicateDestination:'這個目的地已經在清單裡。',destinationLimit:'自訂目的地最多 30 個。',destinationAdded:p=>`已新增目的地：${p.name}`,
+duplicatePurpose:'這個出遊目的已經在清單裡。',purposeLimit:'自訂出遊目的最多 30 個。',purposeAdded:p=>`已新增出遊目的：${p.name}`,copyTitle:p=>`${p.destination} ${p.days} 天打包清單`,invalidDays:'旅行天數請填 1 到 30。'},
+en:{
+pageTitle:'Pack & Go | Packing checklist',tag:'Less worry, more ready.',eyebrow:'YOUR TRIP, ALL SET.',heroTitle:'Pack with confidence, however much you carry.',heroText:'Write down what matters, then get ready one item at a time.',
+formTitle:'Where are you going?',destination:'Destination',chooseDestination:'Choose a destination',addDestination:'Add a destination',add:'Add',days:'Trip length (days)',purpose:'Purpose',addPurpose:'Add a purpose',
+city:'City trip',business:'Business trip',hiking:'Outdoor hiking',weather:'Expected weather',cool:'Cool',hot:'Hot',cold:'Cold',rain:'Rainy',generate:'Create my list ↗',
+note:'You choose the weather. Updating the trip creates a new list and resets checks and custom items.',checklist:'Packing checklist',progressLabel:'Packing progress',remaining:'Show unpacked items only',copy:'Copy list',print:'Print',
+addItemHint:'Need anything else? e.g. display board',addItem:'New item name',
+footer:'Your list is saved in this browser. Check competition items against the organizer’s rules. This tool builds suggestions from your choices; it has no live weather or AI connection.',
+g_fixed:'Last check before leaving',g_essentials:'Essentials',g_work:'Work items',g_outdoors:'Outdoor gear',g_clothes:'Clothing & toiletries',g_weatherGroup:'Weather prep',g_extras:'Small carry-ons',g_custom:'Custom items',
+cable:'Charging cable (check connector)',id:'ID',keys:'Keys',booking:'Check-in or lodging details',tickets:'Tickets and transport details',wallet:'Wallet and payment method',laptop:'Laptop and charger',meeting:'Meeting notes and presentation backup',
+shoes:'Hiking shoes and suitable gear',water:'Drinking water and trail snacks',map:'Offline map',shirts:p=>`Clean shirts: ${p.n} (plus the one you wear)`,underwear:p=>`Underwear: ${p.n} sets`,sleepwear:'Sleepwear (if staying overnight)',
+toiletries:'Toothbrush, toothpaste, and toiletries',medicine:'Personal medication (if needed)',jacket:'Light jacket',pants:'Long pants',lightClothes:'Lightweight clothing',sun:'Hat and sunscreen',warmCoat:'Warm coat',layers:'Warm layers and scarf',
+umbrella:'Umbrella or raincoat',bag:'Waterproof bag cover',phone:'Phone',power:'Power bank',bottle:'Water bottle',tissues:'Tissues',
+w_cool:'Cool',w_hot:'Hot',w_cold:'Cold',w_rain:'Rainy',customTrip:'Custom trip',noDest:'Choose a destination',
+trip:p=>p.days===1?`${p.destination} · Day trip`:`${p.destination} · ${p.days} days, ${p.nights} nights`,
+skipped:'Nothing left to pack',ready:'Everything is packed. Have a good trip!',done:p=>`Packed ${p.done} / ${p.total}`,restore:'Restore',noNeed:'Not needed',none:'No matching items.',
+reset:'Creating a new list resets your checks and custom items. Continue?',generated:'New list created.',itemAdded:p=>`Added: ${p.name}`,copyOk:'List copied.',copyFail:'Could not copy. Please select the list manually.',
+storageFail:'Could not save in this browser; your list may disappear on refresh.',duplicateDestination:'That destination is already in the list.',destinationLimit:'You can add up to 30 custom destinations.',destinationAdded:p=>`Destination added: ${p.name}`,
+duplicatePurpose:'That purpose is already in the list.',purposeLimit:'You can add up to 30 custom purposes.',purposeAdded:p=>`Purpose added: ${p.name}`,copyTitle:p=>`${p.destination}, ${p.days}-day packing list`,invalidDays:'Trip length must be 1 to 30 days.'}
+};
+function tr(k,p={}){const v=D[language][k]!==undefined?D[language][k]:D.zh[k];return typeof v==='function'?v(p):(v===undefined?k:v)}
+
+const baseDestinations='基隆市 臺北市 新北市 桃園市 新竹市 新竹縣 苗栗縣 臺中市 彰化縣 南投縣 雲林縣 嘉義市 嘉義縣 臺南市 高雄市 屏東縣 宜蘭縣 花蓮縣 臺東縣 澎湖縣 金門縣 連江縣'.split(' ');
+const englishDestinations=['Keelung City','Taipei City','New Taipei City','Taoyuan City','Hsinchu City','Hsinchu County','Miaoli County','Taichung City','Changhua County','Nantou County','Yunlin County','Chiayi City','Chiayi County','Tainan City','Kaohsiung City','Pingtung County','Yilan County','Hualien County','Taitung County','Penghu County','Kinmen County','Lienchiang County'];
+const basePurposes=['city','business','hiking'];
+const groupSkippable=['clothes','weatherGroup','extras'];
+
+function readJSON(k){try{return JSON.parse(safeGet(k))}catch{return null}}
+let customDestinations=(Array.isArray(readJSON(destinationKey))?readJSON(destinationKey):[]).filter(x=>typeof x==='string'&&x.trim()).slice(0,30);
+let customPurposes=(Array.isArray(readJSON(purposeKey))?readJSON(purposeKey):[]).filter(p=>p&&typeof p.id==='string'&&typeof p.name==='string').slice(0,30);
+
+function destLabel(v){const i=baseDestinations.indexOf(v);return language==='en'&&i>=0?englishDestinations[i]:v}
+function purposeName(id){return basePurposes.includes(id)?tr(id):(customPurposes.find(p=>p.id===id)||{}).name||tr('customTrip')}
+function addOption(sel,value,text,custom){const o=document.createElement('option');o.value=value;o.textContent=text;if(custom)o.dataset.custom='1';sel.append(o)}
+function buildDestinationOptions(){const sel=$('destination'),cur=sel.value;[...sel.querySelectorAll('option[data-d]')].forEach(o=>o.remove());
+ baseDestinations.forEach((d,i)=>{const o=document.createElement('option');o.value=d;o.dataset.d='1';o.textContent=destLabel(d);sel.append(o)});
+ customDestinations.filter(x=>!baseDestinations.includes(x)).forEach(x=>{const o=document.createElement('option');o.value=x;o.dataset.d='1';o.textContent=x;sel.append(o)});
+ sel.value=cur}
+
+function create(trip){
+ const items=[];
+ const add=(group,list)=>list.forEach(([itemKey,params])=>items.push({id:String(items.length),group,itemKey,params:params||null,done:false,skipped:false}));
+ add('fixed',[['cable'],['id'],['keys']]);
+ add('essentials',[['booking'],['tickets'],['wallet']]);
+ if(trip.purpose==='business')add('work',[['laptop'],['meeting']]);
+ if(trip.purpose==='hiking')add('outdoors',[['shoes'],['water'],['map']]);
+ const clothes=[];
+ if(trip.days>1)clothes.push(['shirts',{n:trip.days-1}]);
+ clothes.push(['underwear',{n:trip.days}],['sleepwear'],['toiletries'],['medicine']);
+ add('clothes',clothes);
+ const weather={cool:['jacket','pants'],hot:['lightClothes','sun'],cold:['warmCoat','layers'],rain:['umbrella','bag']};
+ add('weatherGroup',weather[trip.weather].map(k=>[k]));
+ add('extras',[['phone'],['power'],['bottle'],['tissues']]);
+ return{trip,items};
+}
+function formTrip(){return{destination:$('destination').value,days:Math.min(30,Math.max(1,Math.round(Number($('days').value))||1)),purpose:$('purpose').value,weather:$('weather').value}}
+function itemText(x){return x.itemKey?tr(x.itemKey,x.params||{}):x.name}
+
+function validState(s){return s&&s.trip&&typeof s.trip.destination==='string'&&Array.isArray(s.items)&&s.items.every(x=>x&&typeof x.group==='string'&&(typeof x.itemKey==='string'||typeof x.name==='string'))&&['cool','hot','cold','rain'].includes(s.trip.weather)&&(basePurposes.includes(s.trip.purpose)||customPurposes.some(p=>p.id===s.trip.purpose))&&Number.isInteger(s.trip.days)&&s.trip.days>=1&&s.trip.days<=30}
+
+function save(){if(!safeSet(key,JSON.stringify(state)))$('status').textContent=tr('storageFail')}
+
+function render(){
+ const active=state.items.filter(x=>!x.skipped),done=active.filter(x=>x.done).length,total=active.length,percent=total?Math.round(done/total*100):100;
+ const t=state.trip;
+ $('tripTitle').textContent=tr('trip',{destination:t.destination?destLabel(t.destination):tr('noDest'),days:t.days,nights:t.days-1});
+ $('tripDetail').textContent=`${purposeName(t.purpose)} ／ ${tr('w_'+t.weather)}`;
+ $('progress').textContent=total===0?tr('skipped'):done===total?tr('ready'):tr('done',{done,total});
+ $('fill').style.width=percent+'%';$('bar').setAttribute('aria-valuenow',percent);
+ const list=$('list');list.replaceChildren();
+ const visible=state.items.filter(x=>!$('remaining').checked||(!x.done&&!x.skipped));
+ for(const group of [...new Set(visible.map(x=>x.group))]){
+  const section=document.createElement('section');section.className='group'+(group==='fixed'?' critical':'');
+  const h=document.createElement('h3');h.textContent=tr('g_'+group);section.append(h);
+  for(const item of visible.filter(x=>x.group===group)){
+   const label=document.createElement('label');label.className='item'+(item.done?' done':'')+(item.skipped?' skipped':'');
+   const check=document.createElement('input');check.type='checkbox';check.checked=item.done;check.disabled=!!item.skipped;
+   check.addEventListener('change',()=>{item.done=check.checked;save();render()});
+   const span=document.createElement('span');span.textContent=itemText(item);label.append(check,span);
+   if(groupSkippable.includes(group)){
+    const skip=document.createElement('button');skip.type='button';skip.className='skip-item'+(item.skipped?' restore':'');
+    skip.textContent=item.skipped?'＋':'−';
+    const txt=(item.skipped?tr('restore'):tr('noNeed'))+' '+span.textContent;
+    skip.setAttribute('aria-label',txt);skip.title=item.skipped?tr('restore'):tr('noNeed');
+    skip.addEventListener('click',e=>{e.preventDefault();item.skipped=!item.skipped;if(item.skipped)item.done=false;save();render()});
+    label.append(skip);
+   }
+   section.append(label);
+  }
+  list.append(section);
+ }
+ if(!visible.length){const m=document.createElement('p');m.className='empty';m.textContent=tr('none');list.append(m)}
+}
+
+function applyLanguage(){
+ document.documentElement.lang=language==='en'?'en':'zh-Hant';document.title=tr('pageTitle');
+ document.querySelectorAll('[data-i18n]').forEach(el=>el.textContent=tr(el.dataset.i18n));
+ document.querySelectorAll('[data-i18n-placeholder]').forEach(el=>el.placeholder=tr(el.dataset.i18nPlaceholder));
+ document.querySelectorAll('[data-i18n-aria]').forEach(el=>el.setAttribute('aria-label',tr(el.dataset.i18nAria)));
+ $('langZh').classList.toggle('active',language==='zh');$('langEn').classList.toggle('active',language==='en');
+ $('langZh').setAttribute('aria-pressed',language==='zh');$('langEn').setAttribute('aria-pressed',language==='en');
+ buildDestinationOptions();render();
+}
+
+/* init */
+customPurposes.forEach(p=>addOption($('purpose'),p.id,p.name,true));
+const saved=readJSON(key);
+if(validState(saved))state=saved;
+else{state=create({destination:'',days:3,purpose:'city',weather:'cool'})}
+buildDestinationOptions();
+$('destination').value=state.trip.destination;$('days').value=state.trip.days;$('purpose').value=state.trip.purpose;$('weather').value=state.trip.weather;
+
+$('addDestination').addEventListener('click',()=>{
+ const name=$('newDestination').value.trim();if(!name)return;
+ const all=[...baseDestinations,...englishDestinations,...customDestinations].map(x=>x.toLocaleLowerCase());
+ if(all.includes(name.toLocaleLowerCase())){$('status').textContent=tr('duplicateDestination');return}
+ if(customDestinations.length>=30){$('status').textContent=tr('destinationLimit');return}
+ customDestinations.push(name);safeSet(destinationKey,JSON.stringify(customDestinations));
+ buildDestinationOptions();$('destination').value=name;$('newDestination').value='';$('status').textContent=tr('destinationAdded',{name});
+});
+$('newDestination').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();$('addDestination').click()}});
+$('addPurpose').addEventListener('click',()=>{
+ const name=$('newPurpose').value.trim();if(!name)return;
+ const all=[...basePurposes.map(k=>D.zh[k]),...basePurposes.map(k=>D.en[k]),...customPurposes.map(p=>p.name)].map(x=>x.toLocaleLowerCase());
+ if(all.includes(name.toLocaleLowerCase())){$('status').textContent=tr('duplicatePurpose');return}
+ if(customPurposes.length>=30){$('status').textContent=tr('purposeLimit');return}
+ const p={id:'custom-'+Date.now(),name};customPurposes.push(p);addOption($('purpose'),p.id,name,true);
+ safeSet(purposeKey,JSON.stringify(customPurposes));$('purpose').value=p.id;$('newPurpose').value='';$('status').textContent=tr('purposeAdded',{name});
+});
+$('newPurpose').addEventListener('keydown',e=>{if(e.key==='Enter'){e.preventDefault();$('addPurpose').click()}});
+
+$('tripForm').addEventListener('submit',e=>{
+ e.preventDefault();
+ if(state.items.some(x=>x.done||x.group==='custom')&&!confirm(tr('reset')))return;
+ state=create(formTrip());$('days').value=state.trip.days;save();render();$('status').textContent=tr('generated');
+});
+$('remaining').addEventListener('change',render);
+$('addForm').addEventListener('submit',e=>{
+ e.preventDefault();const name=$('custom').value.trim();if(!name)return;
+ state.items.push({id:'custom-'+Date.now(),group:'custom',name,done:false,skipped:false});
+ $('custom').value='';save();render();$('status').textContent=tr('itemAdded',{name});
+});
+$('print').addEventListener('click',()=>window.print());
+$('copy').addEventListener('click',async()=>{
+ const t=state.trip;
+ const text=[tr('copyTitle',{destination:t.destination?destLabel(t.destination):tr('noDest'),days:t.days}),...state.items.filter(x=>!x.skipped).map(x=>`${x.done?'☑':'☐'} ${itemText(x)}`)].join('\n');
+ try{await navigator.clipboard.writeText(text);$('status').textContent=tr('copyOk')}catch{$('status').textContent=tr('copyFail')}
+});
+$('langZh').addEventListener('click',()=>{language='zh';safeSet(langKey,language);applyLanguage()});
+$('langEn').addEventListener('click',()=>{language='en';safeSet(langKey,language);applyLanguage()});
+applyLanguage();
+</script>
+</body>
+</html>
